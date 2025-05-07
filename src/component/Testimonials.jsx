@@ -6,11 +6,13 @@ import {
   TestimonialFitsum,
   TestimonialOlivia,
   TestimonialShanana,
+  TestimonialShanana2,
 } from "../../public/assets";
 
 const testimonials = [
   { src: TestimonialFitsum, name: "Fitsum", role: "Team Member" },
   { src: TestimonialDamilola, name: "Damilola", role: "UI Designer" },
+  { src: TestimonialShanana2, name: "Aladesae", role: "DevOps" },
   { src: TestimonialOlivia, name: "OliviaSommy", role: "UI Designer" },
   { src: TestimonialShanana, name: "Adesina", role: "Mentor" },
 ];
