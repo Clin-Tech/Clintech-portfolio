@@ -17,7 +17,7 @@ const container = {
 };
 
 const item = {
-  hidden: { opacity: 0, y: 60 },
+  hidden: { opacity: 0, y: 80 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
@@ -79,7 +79,7 @@ const page = () => {
             variants={container}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
           >
             {experiences.map((exp, i) => (
               <motion.div key={i} variants={item}>

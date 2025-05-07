@@ -10,9 +10,9 @@ import {
 } from "../../public/assets";
 
 const testimonials = [
+  { src: TestimonialShanana2, name: "Aladesae", role: "DevOps" },
   { src: TestimonialFitsum, name: "Fitsum", role: "Team Member" },
   { src: TestimonialDamilola, name: "Damilola", role: "UI Designer" },
-  { src: TestimonialShanana2, name: "Aladesae", role: "DevOps" },
   { src: TestimonialOlivia, name: "OliviaSommy", role: "UI Designer" },
   { src: TestimonialShanana, name: "Adesina", role: "Mentor" },
 ];
@@ -23,24 +23,22 @@ export default function TestimonialCarousel() {
       <h2 className=" text-2xl font-semibold text-[#147efb] border-b-[3px] border-b-[#147efb] rounded-b-3xl hover:rounded-none transition duration-300 hover:scale-110 px-5 pb-[10px] mb-6">
         Testimonials
       </h2>
-      <h2 className="text-xl font-semibold text-center mb-6">
+      <h2 className="text-lg md:text-xl font-semibold text-center mb-6">
         What others say about working with me
       </h2>
-      <div className="relative w-full overflow-x-auto flex gap-[-40px] px-4 py-5">
+      <div className="relative w-full overflow-x-auto flex gap-[-40px] px-0 pt-4">
         {testimonials.map((t, i) => (
           <motion.div
             key={i}
             drag="x"
             dragConstraints={{ left: 0, right: 0 }}
             whileTap={{ scale: 1.05 }}
-            className="min-w-[280px] sm:min-w-[320px] rounded-xl bg-black shadow-xl relative z-10"
+            className="min-w-[200px] sm:min-w-[320px] rounded-xl bg-black shadow-xl relative z-10"
           >
             <Image
               src={t.src}
               alt={`${t.name} testimonial`}
-              width={320}
-              height={200}
-              className="rounded-xl object-cover"
+              className="rounded-xl object-cover "
             />
             <div className="absolute bottom-2 left-2 bg-black bg-opacity-50 text-white text-sm rounded px-2 py-1">
               <p className="font-bold">{t.name}</p>

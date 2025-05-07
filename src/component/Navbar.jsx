@@ -30,8 +30,8 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full sticky top-0 bg-white shadow-md px-7 py-4 z-50 overflow-hidden">
-      <div className=" flex justify-between items-center">
+    <nav className="w-full sticky top-0 bg-white shadow-md px-7 py-4 z-50 ">
+      <div className=" flex justify-between items-center w-full">
         <Link href={"/"}>
           <motion.div
             variants={titleAnimate}

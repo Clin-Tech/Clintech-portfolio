@@ -12,7 +12,7 @@ const Polom = () => {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.4 }}
+      viewport={{ once: true, amount: 0.1 }}
       className="w-full flex flex-col md:flex-row items-center justify-center gap-10 shadow py-7 mb-5 bg-white rounded"
     >
       <div className="w-full md:w-1/3 flex items-center justify-center ">
@@ -50,7 +50,7 @@ const Polom = () => {
           ].map((stack, index) => (
             <p
               key={index}
-              className="font-medium shadow-sm p-1 px-2 m-1 rounded-md bg-[#f9f9f9] border border-[#f9f9f9]"
+              className="font-medium text-sm md:text-md shadow-sm p-1 px-2 m-1 rounded-md bg-[#f9f9f9] border border-[#f9f9f9]"
             >
               {stack}
             </p>

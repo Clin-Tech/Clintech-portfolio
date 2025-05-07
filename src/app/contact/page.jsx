@@ -11,7 +11,7 @@ function Contact() {
         Let's Work Together
       </h2>
 
-      <p className="text-gray-700 mb-6 max-w-xl text-lg">
+      <p className="text-gray-700 mb-6 max-w-xl text-md md:text-lg">
         Got a job opportunity or freelance project? I'm open to Frontend roles
         (React, Next.js, React Native) and collaborations. Let’s build something
         amazing.
@@ -20,13 +20,12 @@ function Contact() {
       <div className="text-md text-gray-600 mb-4">
         <p>
           Email:{" "}
-          <span className="font-medium text-black">
+          <span className="font-bold text-black">
             atayeroclinton.ac@gmail.com
           </span>
         </p>
         <p>
-          Phone:{" "}
-          <span className="font-medium text-black">+234 816 420 6284</span>
+          Phone: <span className="font-bold text-black">+234 816 302 9703</span>
         </p>
       </div>
 

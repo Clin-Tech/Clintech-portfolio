@@ -104,7 +104,7 @@ const About = () => {
           <p className="text-2xl font-semibold text-[#147efb] border-b-[3px] border-b-[#147efb] rounded-b-3xl hover:rounded-none transition duration-300 hover:scale-110 px-5 pb-[10px]">
             About Me
           </p>
-          <h4 className="font-bold text-xl text-[#2d2e32]">
+          <h4 className="font-bold text-xl text-[#2d2e32] text-center">
             Front-end Developer based in Nigeria.
           </h4>
           <div className="w-[95%] text-center flex flex-col items-center gap-4">
