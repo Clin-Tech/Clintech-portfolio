@@ -47,7 +47,7 @@ const HomePage = () => {
       <div className="w-full md:w-1/2 lg:w-[35%] h-fit flex items-center justify-center md:justify-start">
         <Image
           src={MyPix}
-          alt="my-pix"
+          alt="My Picture"
           className="w-[20em] h-[20em] object-cover rounded-full body shadow-3xl border-[5px] border-blue-100 md:animate-bounce duration-4000 ease-in-out"
         />
       </div>
