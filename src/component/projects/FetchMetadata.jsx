@@ -26,7 +26,7 @@ const FetchMetadata = () => {
       </div>
       <div className="w-[90%] md:w-1/2 flex flex-col items-start gap-5">
         <p className="font-semibold text-2xl cursor-pointer flex flex-col items-start">
-          Fetech Metadata
+          Fetch Metadata
           <span className="font-bold text-base text-[#147efb]">
             Role: Team Lead & Frontend Engineer.
           </span>

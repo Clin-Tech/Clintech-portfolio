@@ -128,7 +128,7 @@ const About = () => {
             <p className="mt-3 font-extrabold text-[#767676] leading-relaxed">
               <span className="text-[#147efb]"> Skilled in: </span> React.js,
               Next.js, React Native, Tailwind CSS, TypeScript, REST APIs,
-              TanStack React Query, Git, Expo
+              TanStack React Query, Git.
             </p>
           </div>
         </div>

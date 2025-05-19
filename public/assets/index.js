@@ -17,6 +17,7 @@ import UdemyPMCert from "./Udemy-PM.jpg";
 import CiscoIT from "./CISCO-IT.png";
 import CiscoIC3 from "./CISCO-IC3.png";
 import TestimonialShanana2 from "./Shanana-remark.jpeg";
+import TasuedCert from "./My-Tasued-Cert.jpg";
 
 export {
   MyPix,
@@ -38,4 +39,5 @@ export {
   CiscoIC3,
   CiscoIT,
   TestimonialShanana2,
+  TasuedCert,
 };

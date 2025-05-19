@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import {
   CiscoIC3,
   CiscoIT,
+  TasuedCert,
   UdemyPMCert,
   UdemyWebCert,
 } from "../../../public/assets";
@@ -19,6 +20,11 @@ const cardVariants = {
 export default function Certification() {
   const certs = [
     { src: UdemyWebCert, title: "Web Dev Bootcamp", issuer: "Udemy" },
+    {
+      src: TasuedCert,
+      title: "B.A.ED Degree",
+      issuer: "Tai Solarin University of Education (TASUED)",
+    },
     { src: UdemyPMCert, title: "Product Management", issuer: "Udemy" },
     {
       src: CiscoIC3,
