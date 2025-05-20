@@ -7,6 +7,7 @@ import {
   TasuedCert,
   UdemyPMCert,
   UdemyWebCert,
+  ZuriCert,
 } from "../../../public/assets";
 import Image from "next/image";
 import Navbar from "../../component/Navbar";
@@ -26,6 +27,7 @@ export default function Certification() {
       issuer: "Tai Solarin University of Education (TASUED)",
     },
     { src: UdemyPMCert, title: "Product Management", issuer: "Udemy" },
+    { src: ZuriCert, title: "Frontend Web Dev Training", issuer: "I4G x Zuri" },
     {
       src: CiscoIC3,
       title: "Internet & Core Computing",

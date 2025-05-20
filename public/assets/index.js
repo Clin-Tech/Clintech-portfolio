@@ -18,6 +18,7 @@ import CiscoIT from "./CISCO-IT.png";
 import CiscoIC3 from "./CISCO-IC3.png";
 import TestimonialShanana2 from "./Shanana-remark.jpeg";
 import TasuedCert from "./My-Tasued-Cert.jpg";
+import ZuriCert from "./Zuri-cert.jpg";
 
 export {
   MyPix,
@@ -40,4 +41,5 @@ export {
   CiscoIT,
   TestimonialShanana2,
   TasuedCert,
+  ZuriCert,
 };
