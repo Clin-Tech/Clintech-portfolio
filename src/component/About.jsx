@@ -66,19 +66,19 @@ const stacks = [
     name: "Node.js",
   },
 ];
-
 const About = () => {
   return (
-    <div className="w-full flex flex-col items-start gap-8 px-7 py-10">
+    <div className="w-full flex flex-col items-start gap-8 px-6 py-12">
+      {/* Tech Stack */}
       <div className="flex flex-col md:flex-row items-center gap-5">
-        <div className="font-bold text-xl  border-r-[2px] border-r-[#2d2e32] rounded-full pr-5 py-4 mr-3">
+        <div className="font-bold text-xl border-r-2 border-[#2d2e32] pr-5 py-4 mr-3">
           Tech Stack
         </div>
         <motion.div
           variants={motionContainerVariants}
           initial="hidden"
           whileInView="show"
-          className="flex flex-wrap gap-10 mt-4 text-4xl "
+          className="flex flex-wrap gap-10 mt-4 text-4xl"
         >
           {stacks.map((stack) => (
             <motion.div
@@ -92,49 +92,57 @@ const About = () => {
           ))}
         </motion.div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center gap-7 md:gap-0 justify-center pt-10">
-        <div className="w-full md:w-1/2 flex items-center justify-center">
-          <Image
-            src={AboutPix}
-            alt="coding-pix"
-            className="w-[350px] h-[300px] rounded-2xl"
-          />
-        </div>
-        <div className="w-full md:w-1/2 flex flex-col items-center  justify-center gap-5">
-          <p className="text-2xl font-semibold text-[#147efb] border-b-[3px] border-b-[#147efb] rounded-b-3xl hover:rounded-none transition duration-300 hover:scale-110 px-5 pb-[10px]">
-            About Me
-          </p>
-          <h4 className="font-bold text-xl text-[#2d2e32] text-center">
+
+      <p className="text-2xl font-semibold text-[#147efb] border-b-4 border-[#147efb] pb-2 rounded-b-3xl transition duration-300 hover:rounded-none hover:scale-105 mx-auto">
+        About Me
+      </p>
+
+      <div className="w-full flex flex-col-reverse lg:flex-row items-center gap-10 pt-6">
+        <div className="w-full lg:w-1/2 flex flex-col items-center gap-5 text-center lg:text-left">
+          <h4 className="font-bold text-xl text-[#2d2e32]">
             Front-end Developer based in Nigeria.
           </h4>
-          <div className="w-[95%] text-center flex flex-col items-center gap-4">
-            <p className="text-[#767676] font-medium leading-relaxed">
+          <div className="w-[95%] text-[#767676] font-medium space-y-4 leading-relaxed">
+            <p>
               I'm a frontend engineer with 3+ years of experience across mobile
-              and web projects. At POLOM, I helped build the Delivery, Customer
-              and Admin UI of a production-grade e-commerce platform using
+              and web projects. At POLOM, I helped build the Delivery, Customer,
+              and Admin UIs of a production-grade e-commerce platform using
               React, Tailwind, and React Native.
             </p>
-            <p className="text-[#767676] font-medium leading-relaxed">
+            <p>
               Led a cross-functional team of developers and designers during the
-              Zuri Bootcamp, ranking in the top 5 out of 132 teams. Recognized
-              by peers for effective leadership and collaboration.
+              Zuri Bootcamp — ranked top 5 of 132 teams. Recognized by peers for
+              leadership and collaboration.
             </p>
-            <p className="mt-3 text-[#767676] font-medium leading-relaxed">
+            <p>
               I care about clean UI/UX, scalable frontend patterns, and
-              delivering real business value with code. Currently seeking
-              opportunities to contribute to remote teams or organisations
-              building impactful products.
+              delivering real business value with code. Currently open to remote
+              roles or freelance collaborations.
             </p>
-            <p className="mt-3 font-extrabold text-[#767676] leading-relaxed">
-              <span className="text-[#147efb]"> Skilled in: </span> React.js,
-              Next.js, React Native, Tailwind CSS, TypeScript, REST APIs,
-              TanStack React Query, Git.
+            <p className="font-bold">
+              <span className="text-[#147efb]">Skilled in:</span> React.js,
+              Next.js, React Native, Tailwind CSS, TypeScript, REST APIs, React
+              Query, Git.
             </p>
           </div>
+        </div>
+
+        <div className="w-full lg:w-1/2 flex items-center justify-center">
+          <iframe
+            loading="lazy"
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/ICVzeo-SNJc"
+            title="What I Do – Frontend Developer Reel"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+            className="rounded-xl shadow-md"
+          />
         </div>
       </div>
     </div>
   );
 };
-
 export default About;
