@@ -48,7 +48,12 @@ const HomePage = () => {
             </div>
             <div className="">
               <Link href={"/#contact"}>
-                <button className=" bg-gray-600 font-semibold text-white px-4 py-2 cursor-pointer rounded-xl hover:scale-105 transition-all duration-2000">
+                <button
+                  onClick={() => {
+                    if (window.plausible) window.plausible("hire_button_click");
+                  }}
+                  className=" bg-gray-600 font-semibold text-white px-4 py-2 cursor-pointer rounded-xl hover:scale-105 transition-all duration-2000"
+                >
                   📨 Available for hire – contact me below
                 </button>
               </Link>

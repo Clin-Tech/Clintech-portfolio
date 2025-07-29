@@ -29,7 +29,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <script
+          defer
+          data-domain="clintech.me"
+          src="https://plausible.io/js/script.js"
+        ></script>
+      </head>
       <body
         className={`${mulish.variable} font-sans bg-white text-[#2d2e32] antialiased`}
       >
