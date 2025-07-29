@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Mulish } from "next/font/google";
 import { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 const mulish = Mulish({
   variable: "--font-mulish",
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         className={`${mulish.variable} font-sans bg-white text-[#2d2e32] antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
