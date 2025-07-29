@@ -57,6 +57,7 @@ export default function TestimonialCarousel() {
               src={testimonials[current].src}
               alt={`${testimonials[current].name} testimonial`}
               className="object-cover rounded-xl"
+              priority
             />
             <div className="absolute bottom-[-25] md:bottom-2 md:left-2 bg-black bg-opacity-50 text-white text-sm rounded px-2 py-1">
               <p className="font-bold">{testimonials[current].name}</p>

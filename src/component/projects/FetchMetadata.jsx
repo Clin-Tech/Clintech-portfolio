@@ -16,11 +16,18 @@ const FetchMetadata = () => {
       className="w-full flex flex-col md:flex-row items-center justify-center gap-10 shadow py-7 mb-5 bg-white rounded"
     >
       <div className="w-full md:w-1/3 flex items-center justify-center  ">
-        <Link href={"https://fetch-metadata-app.onrender.com/"}>
+        <Link
+          href="https://fetch-metadata-app.onrender.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image
             src={FetchMetadataPix}
-            alt="Homepage image"
-            className="w-[90%] md:w-[27em] h-[17em]"
+            alt="FetchMetadata Homepage"
+            width={432}
+            height={272}
+            className="rounded-lg shadow-md object-cover w-auto h-auto"
+            loading="lazy"
           />
         </Link>
       </div>

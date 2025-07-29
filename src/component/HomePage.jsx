@@ -60,7 +60,11 @@ const HomePage = () => {
         <Image
           src={MyPix}
           alt="My Picture"
-          className="w-[20em] h-[20em] object-cover rounded-full body shadow-3xl border-[5px] border-blue-100 md:animate-bounce duration-4000 ease-in-out"
+          width={300}
+          height={300}
+          priority
+          placeholder="blur"
+          className="rounded-full shadow-2xl border-[5px] border-blue-100 object-cover"
         />
       </div>
     </section>

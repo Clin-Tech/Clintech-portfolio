@@ -1,10 +1,13 @@
 import About from "../component/About";
 import Footer from "../component/Footer";
 import HomePage from "../component/HomePage";
+import LazyProjectsClient from "../component/LazyProjectsClient";
+import LazyTestimonialsClient from "../component/LazyTestimonialsClient";
 import Navbar from "../component/Navbar";
 import Project from "../component/Project";
 import TestimonialCarousel from "../component/Testimonials";
 import Contact from "./contact/page";
+import dynamic from "next/dynamic";
 
 export default function Page() {
   return (
@@ -12,8 +15,8 @@ export default function Page() {
       <Navbar />
       <HomePage />
       <About />
-      <Project />
-      <TestimonialCarousel />
+      <LazyProjectsClient />
+      <LazyTestimonialsClient />
       <Contact />
       <Footer />
     </div>

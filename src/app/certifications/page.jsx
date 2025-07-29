@@ -59,8 +59,11 @@ export default function Certification() {
             >
               <Image
                 src={cert.src}
-                className="w-full h-fit object-cover"
                 alt={cert.title}
+                width={600}
+                height={400}
+                loading="lazy"
+                className="w-full h-auto object-contain"
               />
               <div className="p-4">
                 <h3 className="text-lg font-semibold">{cert.title}</h3>

@@ -13,6 +13,7 @@ import {
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { AboutPix } from "../../public/assets";
+import LazyYouTubeEmbed from "./LazyYouTubeEmbed";
 
 const motionContainerVariants = {
   hidden: { opacity: 0 },
@@ -69,7 +70,6 @@ const stacks = [
 const About = () => {
   return (
     <div className="w-full flex flex-col items-start gap-8 px-6 py-12">
-      {/* Tech Stack */}
       <div className="flex flex-col md:flex-row items-center gap-5">
         <div className="font-bold text-xl border-r-2 border-[#2d2e32] pr-5 py-4 mr-3">
           Tech Stack
@@ -127,20 +127,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 flex items-center justify-center">
-          <iframe
-            loading="lazy"
-            width="100%"
-            height="315"
-            src="https://www.youtube.com/embed/ICVzeo-SNJc"
-            title="What I Do – Frontend Developer Reel"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            referrerPolicy="no-referrer-when-downgrade"
-            className="rounded-xl shadow-md"
-          />
-        </div>
+        <LazyYouTubeEmbed videoId="ICVzeo-SNJc" />
       </div>
     </div>
   );
