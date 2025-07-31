@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 
@@ -39,12 +41,22 @@ function Contact() {
         href="/assets/Clintech-Official-Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        // locale="false"
         download
+        onClick={() => {
+          if (window.plausible) window.plausible("cv_download_click");
+        }}
         className="mt-4 text-[#147efb] font-semibold hover:underline text-base"
       >
         📄 Download My CV (PDF)
       </a>
+      <noscript>
+        <p className="text-red-500 mt-2">
+          If the download doesn't work,{" "}
+          <a href="/assets/Clintech-Official-Resume.pdf" className="underline">
+            click here to open the CV directly.
+          </a>
+        </p>
+      </noscript>
     </section>
   );
 }

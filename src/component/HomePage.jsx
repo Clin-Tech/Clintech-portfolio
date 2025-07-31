@@ -46,15 +46,18 @@ const HomePage = () => {
                 />
               </Link>
             </div>
-            <div className="">
-              <Link href={"/#contact"}>
+            <div className="w-full flex justify-center md:justify-start">
+              <Link href="/#contact" passHref>
                 <button
                   onClick={() => {
                     if (window.plausible) window.plausible("hire_button_click");
                   }}
-                  className=" bg-gray-600 font-semibold text-white px-4 py-2 cursor-pointer rounded-xl hover:scale-105 transition-all duration-2000"
+                  className="flex items-center gap-2 bg-[#147efb] text-white px-5 py-3 rounded-xl font-bold hover:bg-[#0e66c7] hover:scale-105 transition-all duration-300 shadow-md"
                 >
-                  📨 Available for hire – contact me below
+                  <span role="img" aria-label="email">
+                    📨
+                  </span>
+                  <span>Available for Hire – Let’s Connect</span>
                 </button>
               </Link>
             </div>
