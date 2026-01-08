@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 
 const LazyYouTubeEmbed = ({ videoId }: { videoId: string }) => {
@@ -8,7 +9,7 @@ const LazyYouTubeEmbed = ({ videoId }: { videoId: string }) => {
       <div className="relative w-full max-w-[560px] aspect-video rounded-xl shadow-md overflow-hidden bg-black">
         {!isReady ? (
           <button onClick={() => setIsReady(true)} className="w-full h-full">
-            <img
+            <Image
               src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
               alt="Video thumbnail"
               className="w-full h-full object-cover"
