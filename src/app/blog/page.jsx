@@ -1,39 +1,56 @@
 import Link from "next/link";
 import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer";
+import { getAllPosts } from "../../lib/blog";
 
-const blogPosts = [
-  {
-    slug: "google-maps-duplicate-loading-bug",
-    title: "Fixing Google Maps API Duplicate Loading Conflict",
-    date: "April 15, 2025",
-    excerpt:
-      "I ran into an annoying bug where loading the Google Maps script twice broke autocomplete. Here’s what went wrong and how I fixed it.",
-  },
-  // Add more posts...
-];
+export const metadata = {
+  title: "Blog & Technical Articles | ClinTech",
+  description:
+    "Notes on Next.js, React Native, debugging, and shipping real features.",
+};
 
 export default function BlogPage() {
+  const posts = getAllPosts();
+
   return (
-    <div className="w-full relative h-[100vh]">
+    <div className="min-h-screen flex flex-col bg-[#fafafa]">
       <Navbar />
-      <div className="max-w-4xl mx-auto px-4 py-10">
+
+      <main className="flex-1 max-w-4xl mx-auto px-4 py-10">
         <h1 className="text-3xl font-bold mb-6">Blog & Technical Articles</h1>
-        <div className="space-y-6">
-          {blogPosts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`}>
-              <div className="p-4 bg-white rounded-lg shadow hover:shadow-md transition cursor-pointer border border-gray-200">
-                <h2 className="text-xl font-semibold">{post.title}</h2>
-                <p className="text-sm text-gray-500">{post.date}</p>
-                <p className="mt-2 text-gray-700">{post.excerpt}</p>
+
+        <div className="grid gap-6">
+          {posts.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="group block rounded-xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-md transition"
+            >
+              <h2 className="text-xl font-semibold group-hover:text-[#147efb] transition">
+                {post.title}
+              </h2>
+              <div className="mt-1 text-sm text-gray-500">
+                {post.date} • {post.minutes} min read
               </div>
+              <p className="mt-3 text-gray-700">{post.excerpt}</p>
+              {post.tags?.length ? (
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {post.tags.map((t) => (
+                    <span
+                      key={t}
+                      className="text-xs font-medium bg-gray-100 border border-gray-200 px-2 py-1 rounded"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
             </Link>
           ))}
         </div>
-      </div>
-      <div className="absolute w-full bottom-0">
-        <Footer />
-      </div>
+      </main>
+
+      <Footer />
     </div>
   );
 }

@@ -3,6 +3,8 @@
 import React from "react";
 import FetchMetadata from "./projects/FetchMetadata";
 import Polom from "./projects/Polom";
+import ClinVest from "./projects/Clinvest";
+import ApplyCraft from "./projects/ApplyCraft";
 
 function Project() {
   return (
@@ -12,7 +14,9 @@ function Project() {
       </h2>
       <div className="w-full flex flex-col pt-5 gap-15">
         <Polom />
+        <ApplyCraft />
         <FetchMetadata />
+        <ClinVest />
       </div>
     </section>
   );

@@ -11,10 +11,26 @@ import {
 } from "../../public/assets";
 
 const testimonials = [
-  { src: TestimonialShanana2, name: "Aladesae", role: "DevOps" },
-  { src: TestimonialFitsum, name: "Fitsum", role: "Team Member" },
-  { src: TestimonialDamilola, name: "Damilola", role: "UI Designer" },
-  { src: TestimonialOlivia, name: "OliviaSommy", role: "UI Designer" },
+  {
+    src: TestimonialShanana2,
+    name: "Aladesae (DevOps Engineer)",
+    role: "Polom Manager",
+  },
+  {
+    src: TestimonialFitsum,
+    name: "Fitsum (Backend Developer)",
+    role: "Zuri Bootcamp Teammate",
+  },
+  {
+    src: TestimonialDamilola,
+    name: "Damilola (UI/UX Designer)",
+    role: "Zuri Design Partner",
+  },
+  {
+    src: TestimonialOlivia,
+    name: "OliviaSommy (UI Designer)",
+    role: "Zuri Design Partner",
+  },
   { src: TestimonialShanana, name: "Adesina", role: "Mentor" },
 ];
 

@@ -49,7 +49,7 @@ const FetchMetadata = () => {
             (stack, index) => (
               <p
                 key={index}
-                className="font-medium text-sm md:text-md shadow-sm p-1 px-2 m-1 rounded-md bg-[#f9f9f9] border border-[#f9f9f9]"
+                className="font-medium text-sm md:text-md shadow-sm p-1 px-2 m-1 rounded-md bg-slate-100 border border-[#f9f9f9]"
               >
                 {stack}
               </p>

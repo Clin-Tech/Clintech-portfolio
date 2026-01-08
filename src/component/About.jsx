@@ -104,30 +104,52 @@ const About = () => {
           </h4>
           <div className="w-[95%] text-[#767676] font-medium space-y-4 leading-relaxed">
             <p>
-              I'm a frontend engineer with 3+ years of experience across mobile
-              and web projects. At POLOM, I helped build the Delivery, Customer,
-              and Admin UIs of a production-grade e-commerce platform using
-              React, Tailwind, and React Native.
+              <strong className="text-[#2d2e32]">
+                3+ years shipping production frontends
+              </strong>{" "}
+              across e-commerce, logistics, and SaaS. At POLOM, I built the
+              customer-facing web/mobile UIs for a live e-commerce platform,
+              integrated Google Maps APIs (Autocomplete, Directions, Geocoding)
+              for delivery routing, handled real-time inventory updates with
+              React Query, and deployed to production serving actual paying
+              customers.
             </p>
             <p>
-              Led a cross-functional team of developers and designers during the
-              Zuri Bootcamp — ranked top 5 of 132 teams. Recognized by peers for
-              leadership and collaboration.
+              <strong className="text-[#2d2e32]">
+                Led cross-functional teams under pressure.
+              </strong>{" "}
+              During Zuri Bootcamp, led a team of 8 (devs + designers) to top 5
+              finish out of 132 teams. Recognized by mentors for technical
+              leadership and on-time delivery.
             </p>
             <p>
-              I care about clean UI/UX, scalable frontend patterns, and
-              delivering real business value with code. Currently open to remote
-              roles or freelance collaborations.
+              <strong className="text-[#2d2e32]">
+                Recently shipped ApplyCraft.
+              </strong>{" "}
+              full-stack job tracker with Supabase auth, RLS, and AI-powered
+              outreach generation. Built and deployed in 7 days. Live at
+              apply-craft.vercel.app with real users.
             </p>
-            <p className="font-bold">
-              <span className="text-[#147efb]">Skilled in:</span> React.js,
-              Next.js, React Native, Tailwind CSS, TypeScript, REST APIs, React
-              Query, Git.
+            <p className="font-bold text-[#147efb]">
+              Stack: React.js, Next.js, React Native, TypeScript, Tailwind,
+              Supabase, React Query, Zustand, REST APIs, Git
             </p>
           </div>
         </div>
 
-        <LazyYouTubeEmbed videoId="ICVzeo-SNJc" />
+        <div className="w-full lg:w-1/2 flex flex-col gap-4">
+          <div className="bg-[#147efb]/10 rounded-xl p-4 border-l-4 border-[#147efb]">
+            <h3 className="font-bold text-lg mb-2 text-[#2d2e32]">
+              🎥 Watch: My Developer Introduction (2 min)
+            </h3>
+            <p className="text-sm text-gray-600">
+              Quick walkthrough of my live projects and my approach to building
+              production-ready frontends. Currently available for full-time
+              roles and freelance work.
+            </p>
+          </div>
+          <LazyYouTubeEmbed videoId="ICVzeo-SNJc" />
+        </div>
       </div>
     </div>
   );

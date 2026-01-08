@@ -39,12 +39,19 @@ const Polom = () => {
           </span>
         </p>
         <p className="text-[#555555] font-medium mt-1">
-          Contributed to the development of a full-featured e-commerce platform
-          with multiple interfaces across web and mobile. Integrated delivery
-          logistics, user flows, and real-time data handling for an efficient
-          buying experience. <br /> Integrated Google Maps APIs (Autocomplete,
-          Directions, Geocoding) for live address suggestions, route
-          calculation, and ETA display. Built with React Native and Next.js.
+          Built customer-facing web (Next.js) and mobile (React Native) UIs for
+          a production e-commerce platform serving real users. Integrated Google
+          Maps APIs (Autocomplete, Directions, Geocoding) to power delivery
+          address selection, live route calculation, and ETA display.
+          Implemented real-time cart sync with React Query, managed auth flows
+          with Zustand, and handled form validation with Formik across 20+
+          screens.
+          <br />
+          <br />
+          <strong className="text-[#2d2e32]">
+            Deployed to production. Used by Beta customers making purchases
+            today.
+          </strong>
         </p>
         <div className="flex items-center gap-3 flex-wrap">
           {[
@@ -57,7 +64,7 @@ const Polom = () => {
           ].map((stack, index) => (
             <p
               key={index}
-              className="font-medium text-sm md:text-md shadow-sm p-1 px-2 m-1 rounded-md bg-[#f9f9f9] border border-[#f9f9f9]"
+              className="font-medium text-sm md:text-md shadow-sm p-1 px-2 m-1 rounded-md bg-slate-100 border border-[#f9f9f9]"
             >
               {stack}
             </p>

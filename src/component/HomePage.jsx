@@ -17,15 +17,14 @@ const HomePage = () => {
     >
       <div className="w-full md:w-1/2 lg:w-[60%] flex flex-col items-center md:items-start gap-2">
         <div className="font-extrabold text-[2.5rem] md:text-[3rem] lg:text-[4.5rem] text-[#2d2e32]">
-          <AnimatedTextLine textLine="Hi, I'm Clinton - Frontend Developer." />
+          <AnimatedTextLine textLine="Hi, I'm Clinton. Frontend Engineer, built production e-commerce & mobile apps." />
         </div>
         <div className="flex flex-col items-start md:items-start gap-5">
           <p className="flex-wrap text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            I build fast, responsive web and mobile interfaces using React,
-            React Native, Tailwind CSS, and Next.js. I’ve contributed to
-            e-commerce platforms, delivery apps, admin dashboards, real estate
-            UIs, and more — all powered by clean API integrations and built for
-            scale.
+            Shipped customer-facing UIs serving real users at POLOM (e-commerce
+            platform). 3+ years building web (React, Next.js) and mobile (React
+            Native) with clean API integrations, Google Maps SDKs, and
+            Zustand/React Query for state management.
           </p>
           <div className="flex flex-col md:flex-row gap-5 ">
             <div className="flex items-center gap-5">
@@ -57,7 +56,7 @@ const HomePage = () => {
                   <span role="img" aria-label="email">
                     📨
                   </span>
-                  <span>Available for Hire – Let’s Connect</span>
+                  <span>Hiring? Let's Talk! I Ship Production Code</span>
                 </button>
               </Link>
             </div>

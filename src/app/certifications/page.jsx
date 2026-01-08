@@ -13,11 +13,6 @@ import Image from "next/image";
 import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer";
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
-};
-
 export default function Certification() {
   const certs = [
     { src: UdemyWebCert, title: "Web Dev Bootcamp", issuer: "Udemy" },
@@ -49,13 +44,9 @@ export default function Certification() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {certs.map((cert, i) => (
-            <motion.div
+            <div
               key={i}
               className="bg-white shadow-xl rounded-xl overflow-hidden"
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.4 }}
             >
               <Image
                 src={cert.src}
@@ -69,7 +60,7 @@ export default function Certification() {
                 <h3 className="text-lg font-semibold">{cert.title}</h3>
                 <p className="text-sm text-gray-500">{cert.issuer}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
