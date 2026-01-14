@@ -17,7 +17,7 @@ const Polom = () => {
     >
       <div className="w-full md:w-1/3 flex items-center justify-center ">
         <Link
-          href="https://polom.shop/"
+          href="https://polomapp.rsvp/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -76,7 +76,7 @@ const Polom = () => {
             Code <FaGithub /> <em className="text-xs">( Private repo )</em>
           </p>
           {/* </Link> */}
-          <Link href={"https://polom.shop/"}>
+          <Link href={"https://polomapp.rsvp/"}>
             <p className="font-bold cursor-pointer hover:text-[#147efb] flex items-center gap-1">
               Live Demo
               <FaGlobe className="animate-pulse" />
