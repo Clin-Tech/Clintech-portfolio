@@ -5,6 +5,7 @@ import FetchMetadata from "./projects/FetchMetadata";
 import Polom from "./projects/Polom";
 import ClinVest from "./projects/Clinvest";
 import ApplyCraft from "./projects/ApplyCraft";
+import FlightFinder from "./projects/FlightFinder";
 
 function Project() {
   return (
@@ -16,6 +17,7 @@ function Project() {
         <Polom />
         <ApplyCraft />
         <FetchMetadata />
+        {/* <FlightFinder /> */}
         <ClinVest />
       </div>
     </section>

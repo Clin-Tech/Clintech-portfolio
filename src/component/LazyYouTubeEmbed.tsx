@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { useState } from "react";
 
@@ -13,6 +15,8 @@ const LazyYouTubeEmbed = ({ videoId }: { videoId: string }) => {
               src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
               alt="Video thumbnail"
               className="w-full h-full object-cover"
+              width={560}
+              height={315}
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black/50">
               <svg

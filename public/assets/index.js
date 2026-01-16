@@ -21,6 +21,7 @@ import TasuedCert from "./My-Tasued-Cert.jpg";
 import ZuriCert from "./Zuri-cert.jpg";
 import Clinvest from "./clinvest.png";
 import ApplyCraftPix from "./applyCraft.png";
+import FlightFinderPix from "./flight-finder.png";
 
 export {
   MyPix,
@@ -46,4 +47,5 @@ export {
   ZuriCert,
   Clinvest,
   ApplyCraftPix,
+  FlightFinderPix,
 };

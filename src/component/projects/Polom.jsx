@@ -71,11 +71,9 @@ const Polom = () => {
           ))}
         </div>
         <div className="w-full flex items-center justify-between ">
-          {/* <Link href={"https://github.com/97Clinton/Fetch_Metadata-project"}> */}
           <p className="font-bold text-[#888888] cursor-pointer flex items-center gap-1">
             Code <FaGithub /> <em className="text-xs">( Private repo )</em>
           </p>
-          {/* </Link> */}
           <Link href={"https://polomapp.rsvp/"}>
             <p className="font-bold cursor-pointer hover:text-[#147efb] flex items-center gap-1">
               Live Demo
