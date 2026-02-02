@@ -17,7 +17,7 @@ function Project() {
         <Polom />
         <ApplyCraft />
         <FetchMetadata />
-        {/* <FlightFinder /> */}
+        <FlightFinder />
         <ClinVest />
       </div>
     </section>
