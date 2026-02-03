@@ -13,6 +13,7 @@ const Polom = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.1 }}
+      id="polom-project"
       className="w-full flex flex-col md:flex-row items-center justify-center gap-10 shadow py-7 mb-5 bg-white rounded"
     >
       <div className="w-full md:w-1/3 flex items-center justify-center ">
@@ -74,12 +75,23 @@ const Polom = () => {
           <p className="font-bold text-[#888888] cursor-pointer flex items-center gap-1">
             Code <FaGithub /> <em className="text-xs">( Private repo )</em>
           </p>
-          <Link href={"https://polomapp.rsvp/"}>
-            <p className="font-bold cursor-pointer hover:text-[#147efb] flex items-center gap-1">
-              Live Demo
-              <FaGlobe className="animate-pulse" />
-            </p>
-          </Link>
+
+          <div className="flex items-center gap-4">
+            <Link href="/projects/polom">
+              <p className="font-bold cursor-pointer hover:text-[#147efb]">
+                Case Study
+              </p>
+            </Link>
+            <Link
+              href="https://polomapp.rsvp/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="font-bold cursor-pointer hover:text-[#147efb] flex items-center gap-1">
+                Live Demo <FaGlobe className="animate-pulse" />
+              </p>
+            </Link>
+          </div>
         </div>
       </div>
     </motion.div>

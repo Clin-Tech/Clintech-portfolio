@@ -16,9 +16,10 @@ function Project() {
       <div className="w-full flex flex-col pt-5 gap-15">
         <Polom />
         <ApplyCraft />
-        <FetchMetadata />
+        {/* <TanStackDemo /> */}
         <FlightFinder />
         <ClinVest />
+        <FetchMetadata />
       </div>
     </section>
   );
