@@ -4,12 +4,6 @@ import Link from "next/link";
 import Navbar from "../../../component/Navbar";
 import Footer from "../../../component/Footer";
 
-// export const metadata = {
-//   title: "POLOM E-commerce Platform – Case Study | ClinTech",
-//   description:
-//     "Multi-platform e-commerce system: customer web/mobile, driver, admin, and branch manager apps. Performance, caching, Maps, and shared UI library.",
-// };
-
 export default function PolomCaseStudy() {
   return (
     <div className="w-full bg-gradient-to-b from-gray-50 to-white">
