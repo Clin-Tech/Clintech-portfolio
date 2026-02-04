@@ -6,6 +6,7 @@ import Polom from "./projects/Polom";
 import ClinVest from "./projects/Clinvest";
 import ApplyCraft from "./projects/ApplyCraft";
 import FlightFinder from "./projects/FlightFinder";
+import TanStackDemo from "./projects/TanStackDemo";
 
 function Project() {
   return (
@@ -16,7 +17,7 @@ function Project() {
       <div className="w-full flex flex-col pt-5 gap-15">
         <Polom />
         <ApplyCraft />
-        {/* <TanStackDemo /> */}
+        <TanStackDemo />
         <FlightFinder />
         <ClinVest />
         <FetchMetadata />

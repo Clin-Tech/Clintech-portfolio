@@ -22,6 +22,7 @@ import ZuriCert from "./Zuri-cert.jpg";
 import Clinvest from "./clinvest.png";
 import ApplyCraftPix from "./applyCraft.png";
 import FlightFinderPix from "./flight-finder.png";
+import CryptoTrackerPix from "./crypto-tracker.png";
 
 export {
   MyPix,
@@ -48,4 +49,5 @@ export {
   Clinvest,
   ApplyCraftPix,
   FlightFinderPix,
+  CryptoTrackerPix,
 };
