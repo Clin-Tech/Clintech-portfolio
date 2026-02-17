@@ -16,7 +16,7 @@ export default function FlightFinder() {
     >
       <div className="w-full md:w-1/3 flex items-center justify-center">
         <Link
-          href="https://spotter-flight-search-engine.vercel.app/"
+          href="https://skyfare-flight.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -33,7 +33,7 @@ export default function FlightFinder() {
 
       <div className="w-[90%] md:w-1/2 flex flex-col items-start gap-4">
         <p className="font-semibold text-2xl flex flex-col">
-          FlightFinder — Flight Search & Offers Explorer
+          SkyFare — Flight Search & Offers Explorer
           <span className="text-base font-bold text-[#147efb]">
             Role: Solo developer (end-to-end)
           </span>
@@ -91,7 +91,7 @@ export default function FlightFinder() {
 
           <div className="flex items-center gap-6">
             <Link
-              href="https://spotter-flight-search-engine.vercel.app/"
+              href="https://skyfare-flight.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold hover:text-[#147efb] flex items-center gap-1"
