@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const metrics = [
   { number: "3+", label: "Years Shipping Frontend", icon: "🚀" },
   { number: "20+", label: "Production Features Deployed", icon: "✅" },
-  { number: "4", label: "Live Projects in Portfolio", icon: "🎯" },
+  { number: "6", label: "Live Projects in Portfolio", icon: "🎯" },
   { number: "Top 5", label: "Zuri Bootcamp (132 teams)", icon: "🏆" },
 ];
 

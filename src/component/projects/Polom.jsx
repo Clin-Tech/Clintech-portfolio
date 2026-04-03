@@ -34,7 +34,7 @@ const Polom = () => {
       </div>
       <div className="w-[90%] md:w-1/2 flex flex-col items-start gap-5">
         <p className="font-semibold text-2xl cursor-pointer flex flex-col items-start">
-          POLOM E-commerce Customer UI
+          POLOM E-commerce
           <span className="font-bold text-base text-[#147efb]">
             Role: Frontend Developer (Web & Mobile)
           </span>

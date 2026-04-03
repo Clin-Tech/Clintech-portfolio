@@ -9,7 +9,7 @@ const HomePage = () => {
   const featuredProjects = [
     {
       title: "POLOM E-Commerce",
-      description: "4 production apps • 1,400+ businesses",
+      description: "4 production apps • used by real users",
       metrics: ["60% fewer API calls", "40% faster renders"],
       link: "#polom-project",
     },
