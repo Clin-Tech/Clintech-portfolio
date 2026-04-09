@@ -4,7 +4,7 @@ import LinkedInIcon from "./linkedin.svg";
 import GithubIcon from "./github.svg";
 import AboutPix from "./coding.jpg";
 import FetchMetadataPix from "./metadata.png";
-import PolomPix from "./polomPix.png";
+import PolomPix from "./polom.png";
 import TestimonialFitsum from "./TestimonialFitsum.jpg";
 import TestimonialDamilola from "./TestimonialDamilola.jpg";
 import TestimonialOlivia from "./TestimonialOlivia.jpg";
