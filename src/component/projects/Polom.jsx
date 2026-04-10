@@ -17,20 +17,20 @@ const Polom = () => {
       className="w-full flex flex-col md:flex-row items-center justify-center gap-10 shadow py-7 mb-5 bg-white rounded"
     >
       <div className="w-full md:w-1/3 flex items-center justify-center ">
-        <Link
+        {/* <Link
           href="https://polomapp.rsvp/"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          <Image
-            src={PolomPix}
-            alt="POLOM Customer UI Homepage"
-            width={432}
-            height={272}
-            className="rounded-lg shadow-md object-cover w-auto h-auto"
-            loading="lazy"
-          />
-        </Link>
+        > */}
+        <Image
+          src={PolomPix}
+          alt="POLOM Customer UI Homepage"
+          width={432}
+          height={272}
+          className="rounded-lg shadow-md object-cover w-auto h-auto"
+          loading="lazy"
+        />
+        {/* </Link> */}
       </div>
       <div className="w-[90%] md:w-1/2 flex flex-col items-start gap-5">
         <p className="font-semibold text-2xl cursor-pointer flex flex-col items-start">
@@ -49,10 +49,14 @@ const Polom = () => {
           screens.
           <br />
           <br />
-          <strong className="text-[#2d2e32]">
+          {/* <strong className="text-[#2d2e32]">
             Deployed to production. Used by Beta customers making purchases
             today.
-          </strong>
+          </strong> */}
+          <span className="text-sm text-yellow-600 mt-2">
+            ⚠️ Platform currently offline due to operational constraints. Full
+            system was built, deployed, and used by real customers.
+          </span>
         </p>
         <div className="flex items-center gap-3 flex-wrap">
           {[
@@ -82,7 +86,10 @@ const Polom = () => {
                 Case Study
               </p>
             </Link>
-            <Link
+            <span className="text-sm text-yellow-600">
+              Demo currently offline
+            </span>
+            {/* <Link
               href="https://polomapp.rsvp/"
               target="_blank"
               rel="noopener noreferrer"
@@ -90,7 +97,7 @@ const Polom = () => {
               <p className="font-bold cursor-pointer hover:text-[#147efb] flex items-center gap-1">
                 Live Demo <FaGlobe className="animate-pulse" />
               </p>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
