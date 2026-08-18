@@ -45,6 +45,13 @@ function Contact() {
         </a>
       </div>
 
+      <Link
+        href="/freelance"
+        className="text-xs text-gray-400 hover:text-gray-500 hover:underline transition-colors mb-6"
+      >
+        Also available for freelance projects →
+      </Link>
+
       <div className="text-sm text-gray-600 space-y-1">
         <p>
           Email:{" "}
